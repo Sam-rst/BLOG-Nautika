@@ -35,6 +35,11 @@ Pour obtenir une copie locale et la faire fonctionner, suivez les étapes suivan
     npm install
    ```
 
+5. Build le projet avec la commande suivante :
+   ```bash
+    npm run build
+   ```
+
 Votre installation est maintenant terminée !
 
 ## Lancement du serveur avec Symfony
