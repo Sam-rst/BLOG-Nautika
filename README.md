@@ -48,3 +48,23 @@ Pour lancer le serveur Symfony et faire fonctionner l'application, veuillez exé
    ```bash
    symfony serve:start
    ```
+
+## Effectuer des tests unitaires
+
+1. Pour effectuer des tests unitaires sur des entités par exemple, il suffit de créer d'abord des entités avec la commande symfony :
+   ```bash
+   symfony console make:entity
+   ```
+
+2. Après cela, créer un test unitaire sur une entité avec la commande symfony suivante (devient obsolète) avec la nomenclature \<NomEntite>UnitTest:
+   ```bash
+   symfony console make:unit-test
+   ```
+
+3. Vous avez différents exemples de code dans le répertoire [./tests](./tests)
+
+4. Pour effectuer les tests unitaires :
+   ```bash
+   php bin/phpunit --testdox
+   ```
+   Le ```--testdox``` vous permet d'avoir un meilleur affichage des résultats des tests
