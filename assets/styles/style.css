@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Jua';
+    src: url('./fonts/Jua-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Jua', sans-serif;
+    /* Utilisez la police dans votre document */
+}

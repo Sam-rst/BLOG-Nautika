@@ -1,4 +1,10 @@
-$primary: #12263A;
-$secondary: #06BCC1;
-$success: #C5D8D1;
-$info: #F4D1AE;
+$primary: #3B8B96;
+$secondary: #D55751;
+$warning: #F2CD7C;
+$info: #D12C22;
+
+@font-face {
+    font-family: 'Jua';
+    src: 
+        url('./fonts/Jua-Regular.ttf') format('truetype'),
+}
