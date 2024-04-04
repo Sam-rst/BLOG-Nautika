@@ -2,16 +2,46 @@
 
 {% block title %}Hello HomeController!
 {% endblock %}
+{% block header %}
+	<header class="header">
+		<div class="triangle-container">
+			<img id="logoAccueil" src="{{ asset('images/logo_nautika.png') }}">
+		</div>
+
+		<div id="fondAccueilContainer">
+			<img id="fondAccueil" src="{{ asset('images/fond-accueil.jpg') }}">
+		</div>
+	</header>
+{% endblock %}
 {% block body %}
-	<section class="bg-primary">
-		<div class="title text-center py-5">
-			<h2 class="bg-white border border-3 border-dark rounded rounded-3 px-2 d-inline">Communauté</h2>
-		</div>
-		<div class="container bg-warning">
-			<div class="card text-center">
-				<div class="card-header"></div>
-				<div class="card-body"></div>
+	<main>
+		<section class="home">
+			<div id="home">
+				<h1>Home</h1>
 			</div>
-		</div>
-	</section>
+		</section>
+
+		<section class="about">
+			<div id="about">
+				<h1>About</h1>
+			</div>
+		</section>
+
+		<section class="portfolio">
+			<div id="portfolio">
+				<h1>Portfolio</h1>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div id="contact">
+				<h1>Contact</h1>
+			</div>
+		</section>
+		
+	</main>
+
+	<footer class="footer">
+		<h1>Footer</h1>
+	</footer>
 {% endblock %}
