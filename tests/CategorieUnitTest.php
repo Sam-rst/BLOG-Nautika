@@ -11,29 +11,24 @@ class CategorieUnitTest extends TestCase
     {
         $categorie = new Categorie();
 
-        $categorie->setTitle('title')
-                  ->setDescription('description');
+        $categorie->setLibelle('libelle');
 
-        $this->assertTrue($categorie->getTitle() === 'title');
-        $this->assertTrue($categorie->getDescription() === 'description');
+        $this->assertTrue($categorie->getLibelle() === 'libelle');
     }
     
     public function testIsFalse()
     {
         $categorie = new Categorie();
 
-        $categorie->setTitle('title')
-                  ->setDescription('description');
+        $categorie->setLibelle('libelle');
 
-        $this->assertFalse($categorie->getTitle() === 'false');
-        $this->assertFalse($categorie->getDescription() === 'false');
+        $this->assertFalse($categorie->getLibelle() === 'false');
     }
 
     public function testIsEmpty()
     {
         $categorie = new Categorie();
 
-        $this->assertEmpty($categorie->getTitle());
-        $this->assertEmpty($categorie->getDescription());
+        $this->assertEmpty($categorie->getLibelle());
     }
 }
